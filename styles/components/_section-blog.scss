@@ -1,0 +1,39 @@
+.section-blog {
+	background-color: $blog-bg-color;
+	&__container {
+		@include flex(center, center, column);
+		padding: 50px 24px;
+		@include media {
+			padding: 80px 0 120px;
+		}
+	}
+	&__title {
+		@include text($H900, 700, $white);
+		margin-bottom: 24px;
+	}
+	&__description {
+		@include text($H200, 300, $white);
+		line-height: 1.5;
+		max-width: 570px;
+		text-align: center;
+		margin-bottom: 44px;
+	}
+	&__list {
+		flex-direction: column;
+		margin-bottom: 50px;
+		@include media {
+			@include flex;
+		}
+	}
+	&__list--item {
+		&:not(:last-child) {
+			margin-bottom: 35px;
+		}
+		@include media {
+			&:not(:last-child) {
+				margin-right: 30px;	
+				margin-bottom: 0;
+			}
+		}
+	}
+}

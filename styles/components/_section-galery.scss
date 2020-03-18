@@ -1,0 +1,41 @@
+.section-galery {
+	background-color: $gallery-bg-color;
+	padding: 50px 24px;
+	@media screen and (min-width: $screen-desktop) {
+		padding: 90px 0px;
+    }
+	
+	&__title {
+		@include text($H900, 700);
+		text-align: center;
+		margin-bottom: 28px;
+		@media screen and (min-width: $screen-desktop){
+		}
+	}
+	&__description {
+		@include text($H200, 300);
+		line-height: 27px;
+		margin: 0 auto 42px;
+		max-width: 577px;
+		text-align: center;
+		@media screen and (min-width: $screen-desktop){
+			width: 577px;
+		}
+	}
+	&__grid {
+		margin-bottom: 24px;
+		@media screen and (min-width: $screen-desktop){
+			margin-bottom: 48px;
+		}
+	}
+	&__button {
+		display: block;
+		text-align: center;
+		@media screen and (min-width: $screen-desktop){
+			width: fit-content;
+			margin: 0 auto;
+		}
+	}
+}
+
+

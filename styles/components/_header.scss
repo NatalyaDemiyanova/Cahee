@@ -1,0 +1,36 @@
+.header {
+	background-image: url("../images/header_bg.png");
+	background-size: cover;
+	background-position: center center;
+
+	&__container {
+		@extend %container;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 1 auto;
+		min-height: 100vh;
+	}
+
+	&__content {
+		padding-top: 358px;
+	}
+	&__title {
+		font-size: $H800;
+		font-weight: 900;
+		color: $text-main-color;
+		margin-bottom: 20px;
+	}
+	&__text {
+		width: 368px;
+		font-size: $H200;
+		line-height: 27px;
+		font-weight: 300;
+		color: $text-main-color;
+		padding-bottom: 51px;
+	}
+	&__scroll {
+		@include flex(center,center);
+		margin-bottom: 70px;
+	}
+}

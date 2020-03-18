@@ -1,0 +1,80 @@
+.section-contact {
+	padding: 50px 24px 60px;
+	background-image: url('../images/contact_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media {
+		padding: 80px 0 120px;
+	}
+
+	&__container {
+		@include flex(center, center, column);
+	}
+	&__title {
+		@include text($H900, 700);
+		margin-bottom: 25px;
+	}
+	&__description {
+		@include text($H200, 300);
+		line-height: 25px;
+		width: 350px;
+		margin-bottom: 46px;
+		text-align: center;
+	}
+	&__wrapper {
+		flex-direction: column;
+		width: 100%;
+		@include media {
+			@include flex;
+		}
+	}
+	&__form--wrapper {
+		order: 2;
+		width: 100%;
+		padding-right: 0px;	
+		@include media {
+			order: 1;
+			width: 50%;
+			padding-right: 75px;
+		}
+	}
+	&__form {
+		@include flex(flex-star, stretch, column);
+		margin-bottom: 24px;
+		&:valid + * {
+			display: flex;
+		}
+	}
+	&__input {
+		&:not(:last-child){
+		margin-bottom: 15px;
+		}
+	}
+	&__button{
+		opacity: 0.8;
+		display: none;
+		@include media {
+			width: 100%;
+		}
+	}	
+	&__list {
+		order: 1;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		&--title {
+			@include text($H200, 700);
+		}
+		&--text {
+			@include text($H300, 300);
+			margin-bottom: 18px;
+		}
+		@include media {
+			order: 2;
+			width: 50%;
+			padding-left: 75px;
+			text-align: left;
+		}
+
+	}
+}

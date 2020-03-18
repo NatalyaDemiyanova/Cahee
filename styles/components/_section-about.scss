@@ -1,0 +1,61 @@
+.section-about {
+	background-color: $about-bg-color;
+	padding-top: 40px;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0px 24px;
+		@media screen and (min-width: $screen-desktop) {
+			@include flex (space-between, center);
+			margin: 0 auto;
+			padding: 0px;
+   		}
+	}
+
+	&__image-box {
+		width: 100%;
+		margin-bottom: 30px;
+		transform: rotateZ(360deg);
+		@media screen and (min-width: $screen-desktop) {
+			width: 50%;
+		}
+	}
+	&__image{
+		width: 100%;
+	}
+
+	&__content-box {
+		width: 100%;
+		margin-bottom: 70px;
+		@media screen and (min-width: $screen-desktop) {
+			width: 50%;
+			padding-left: 80px;
+   		}
+	}
+	&__title {
+		text-align: center;
+		font-size: $H900;
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 15px;
+		@media screen and (min-width: $screen-desktop) {
+			text-align: left;	
+   		}
+	}
+	&__text {
+		text-align: center;
+		font-size: $H200;
+		line-height: 27px;
+		font-weight: 300;
+		color: $white;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			width: 500px;
+			text-align: left;
+   		}
+	}
+}

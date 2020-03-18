@@ -2,58 +2,273 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/style.css">
-	<title>Lesson_10.2</title>
+	<title> Cahee (Lesson_13)</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="section">
-		<h2 class="section__title">Blog</h2>
-		<p class="section__description">
-			Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
-		</p>
-		<ul class="section__list">
-			<li class="section__list--item card">
-				<img class="card__image" src="images/moxito.png" alt="moxito">
-				<div class="card__date-box">
-					<span class="card__date">20</span>
-					<span class="card__date-month"> nov</span>
+	<header class="header">
+		<nav class="navigation">
+			<h1 class="logo navigation__logo">Cahee</h1>
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">HOME</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">ABOUT</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">SERVICES</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">GALLERY</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">BLOG</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container header__container">
+			<section class="header__content">
+				<h2 class="header__title">Fresh Life</h2>
+				<p class="header__text">
+					Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+				</p>
+				<a class="button button--header" href="#">GET FREE NOW</a>
+			</section>
+			<div class="scroll header__scroll">
+				<a href="">
+					<img src="images/scroll_40.png" alt="scroll">
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<section class="section-about">
+			<div class=" container section-about__container">
+				<div class="section-about__image-box">
+					<img class="section-about__image" src="images/about_us.png" alt="about us">
 				</div>
-				<div class="card__content">
-					<h3 class="card__title">
-						Green Smoothies: Too Much of a Good Thing?
-					</h3>
-					<p class="card__info">By Auskteez - 2 hours ago</p>
+				<div class="section-about__content-box">
+					<h2 class="section-about__title">About Us</h2>
+					<p class="section-about__text">
+						Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+					</p>
+					<p class="section-about__text">
+						Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+					</p>
 				</div>
-			</li>
-			<li class="section__list--item card">
-				<img class="card__image" src="images/soup.png" alt="soup">
-				<div class="card__date-box">
-					<span class="card__date">10</span>
-					<span class="card__date-month"> nov</span>
+			</div>
+		</section>
+		
+		<section class="section-services">
+			<div class=" container section-services__container">
+				<div class="section-services__content-box">
+					<ul class="section-services__list ">
+						<li class="section-services__item">
+							<a class="link-card" href="#">
+								<div class="link-card__text-wrapper">
+									<h3 class="link-card__text">Online Shopping</h3>
+								</div>
+								<div class="link-card__icon-wrapper">
+									<img class="link-card__icon" src="images/services/basket.svg" alt="basket">
+								</div>
+							</a>
+						</li>
+						<li class="section-services__item">
+							<a class="link-card" href="#">
+								<div class="link-card__text-wrapper">
+									<h3 class="link-card__text">Quality Product</h3>
+								</div>
+								<div class="link-card__icon-wrapper">
+									<img class="link-card__icon" src="images/services/hand.svg" alt="hand">
+								</div>
+							</a>
+						</li>
+						<li class="section-services__item">
+							<a class="link-card" href="#">
+								<div class="link-card__text-wrapper">
+									<h3 class="link-card__text">Domestic & International Delivery</h3>
+								</div>
+								<div class="link-card__icon-wrapper">
+									<img class="link-card__icon" src="images/services/earth.svg" alt="earth">
+								</div>
+							</a>
+						</li>
+						<li class="section-services__item">
+							<a class="link-card" href="#">
+								<div class="link-card__text-wrapper">
+									<h3 class="link-card__text">Well Organized</h3>
+								</div>
+								<div class="link-card__icon-wrapper">
+									<img class="link-card__icon" src="images/services/carrot.svg" alt="carrot">
+								</div>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class="card__content">
-					<h3 class="card__title">
-						Growing Food and a “Thirst” for Innovation
-					</h3>
-					<p class="card__info">By Auskteez - 3 hours ago</p>
+				<div class="section-services__image-box">
+					<h2 class="section-services__title">Our Services</h2>
+					<div class="section-services__image-wrapper">
+						<img class="section-services__image" src="images/services/services.png" alt="services">
+					</div>
 				</div>
-			</li>
-			<li class="section__list--item card">
-				<img class="card__image" src="images/malina.png" alt="malina">
-				<div class="card__date-box">
-					<span class="card__date">14</span>
-					<span class="card__date-month"> nov</span>
+			</div>
+		</section>
+
+		<section class="section-galery">
+			<div class="container section-galery__container">
+				<h2 class="section-galery__title">Gallery</h2>
+				<p class="section-galery__description">
+					Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<div class="section-galery__grid photo-grid">
+
+					<div class="photo-grid__row">
+						<div class="photo-grid__col photo-grid__col--large photo-grid__image-wrapper">
+							<img src="images/galery/Clip-1.png" alt="clip-1">
+						</div>
+						<div class="photo-grid__col">
+							<div class="photo-grid__row photo-grid__row--small photo-grid__image-wrapper">
+								<img src="images/galery/Clip-2.png" alt="clip-2">
+							</div>
+							<div class="photo-grid__row photo-grid__row--small photo-grid__image-wrapper">
+								<img src="images/galery/Clip-3.png" alt="clip-3">
+							</div>
+						</div>
+					</div>
+
+					<div class="photo-grid__row">
+						<div class="photo-grid__col photo-grid__col--medium photo-grid__image-wrapper">
+							<img src="images/galery/Clip-4.png" alt="clip-4">
+						</div>
+						<div class="photo-grid__col photo-grid__col--medium photo-grid__image-wrapper">
+							<img src="images/galery/Clip-5.png" alt="clip-5">
+						</div>
+					</div>
 				</div>
-				<div class="card__content">
-					<h3 class="card__title">
-						Pesticides & Food: What You Need to Know
-					</h3>
-					<p class="card__info">By Auskteez - 6 hours ago</p>
+				<a class="button button--gallery section-galery__button" href="#">VIEW MORE</a>
+			</div>
+		</section>
+
+		<section class="section-subscribe">
+			<div class="container section-subscribe__container">
+				<h2 class="section-subscribe__title">Subscribe To Us</h2>
+				<p class="section-subscribe__description">
+					Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+				<form class="section-subscribe__form" action="#" method="get">
+					<input class="section-subscribe__input" type="email" placeholder="Your email address..." >
+					<button class="button button--subscribe section-subscribe__button" type="submit" name="submit">SUBSCRIBE</button>
+				</form>
+			</div>
+		</section>
+		
+
+		<section class="section-blog">
+			<div class="container section-blog__container">
+				<h2 class="section-blog__title">Blog</h2>
+				<p class="section-blog__description">
+					Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+				</p>
+				<ul class="section-blog__list">
+					<li class="section-blog__list--item blog-card">
+						<img class="blog-card__image" src="images/blog/moxito.png" alt="moxito">
+						<div class="blog-card__date-box">
+							<span class="blog-card__date">20</span>
+							<span class="blog-card__date-month"> nov</span>
+						</div>
+						<div class="blog-card__content">
+							<h3 class="blog-card__title">
+								Green Smoothies: Too Much of a Good Thing?
+							</h3>
+							<p class="blog-card__info">By Auskteez - 2 hours ago</p>
+						</div>
+					</li>
+					<li class="section-blog__list--item blog-card">
+						<img class="blog-card__image" src="images/blog/soup.png" alt="soup">
+						<div class="blog-card__date-box">
+							<span class="blog-card__date">10</span>
+							<span class="blog-card__date-month"> nov</span>
+						</div>
+						<div class="blog-card__content">
+							<h3 class="blog-card__title">
+								Growing Food and a “Thirst” for Innovation
+							</h3>
+							<p class="blog-card__info">By Auskteez - 3 hours ago</p>
+						</div>
+					</li>
+					<li class="section-blog__list--item blog-card">
+						<img class="blog-card__image" src="images/blog/malina.png" alt="malina">
+						<div class="blog-card__date-box">
+							<span class="blog-card__date">14</span>
+							<span class="blog-card__date-month"> nov</span>
+						</div>
+						<div class="blog-card__content">
+							<h3 class="blog-card__title">
+								Pesticides & Food: What You Need to Know
+							</h3>
+							<p class="blog-card__info">By Auskteez - 6 hours ago</p>
+						</div>
+					</li>
+				</ul>
+				<a class="button button--blog section-blog__button" href="#">VIEW MORE</a>
+			</div>
+		</section>
+
+
+		<section class="section-contact">
+			<div class="container section-contact__container">
+				<h2 class="section-contact__title">Contact</h2>
+				<p class="section-contact__description">
+					For new projects, ideas, business or anything you'd like to discuss, contact with me!
+				</p>
+				<div class="section-contact__wrapper">
+					<div class="section-contact__form--wrapper">
+						<form class="section-contact__form" name="form" id="form" action="#">
+							<input type="text" class="section-contact__input input" name="text"  placeholder="Auskteez Tran" minlength="5" required>
+							<input type="email" class="section-contact__input input" name="email"  placeholder="Your email..." required>
+							<input type="tel" class="section-contact__input input" name="tel" placeholder="Your phone number..." minlength="9" required>
+							<textarea class="section-contact__input input input--texarea" name="textarea" placeholder="Your messege..." cols="30" rows="10"></textarea>
+						</form>
+						<button form="form" class="button button--input section-contact__button">send</button>
+					</div>
+
+					<ul class="section-contact__list">
+						<li class="section-contact__list--item">
+							<p class="section-contact__list--title">
+								ADDRESS
+							</p>
+							<p class="section-contact__list--text">
+								123 City name, Street, City, Country
+							</p>
+						</li>
+						<li class="section-contact__list--item">
+							<p class="section-contact__list--title">
+								EMAIL
+							</p>
+							<p class="section-contact__list--text">
+								cahee@domain.com
+							</p>
+						</li>
+						<li class="section-contact__list--item">
+							<p class="section-contact__list--title">
+								PHONE
+							</p>
+							<p class="section-contact__list--text">
+								+012 345 6789
+							</p>
+						</li>				
+					</ul>
 				</div>
-			</li>
-		</ul>
-		<a class="button" href="#">VIEW MORE</a>
-	</section>
+			</div>
+		</section>
+		
+	</main>
 </body>
 </html>

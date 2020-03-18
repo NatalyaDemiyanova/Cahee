@@ -1,0 +1,30 @@
+.navigation {
+	height: 90px;
+	position: fixed;
+	@include flex (space-between, center);
+	top: 0; // откуда взялось
+	left: 0;
+	right: 0;
+	@extend %container;
+	padding-top: 50px;
+
+	&__list {
+		@include flex;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__link {
+		color: $text-main-color;
+		font-size: $H100;
+		font-weight: 700;
+		transition: all 0.2s ease;
+	    border-top: 2px solid transparent;
+	    &:hover {
+      		border-color: $header-btn-color;
+		}
+	}
+
+}

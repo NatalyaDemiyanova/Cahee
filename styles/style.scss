@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway&display=swap');
 
-@import './core/var'; //переменные
+// Core
+@import './core/var'; //переменные (записываем первым)
 @import './core/inheritance'; //шаблоны
-@import './core/common'; //общие стили
+@import './core/mixins'; // миксины
+@import './core/common'; //общие стили (всегда запис. последним)
+
+
 
 // блоки 
-@import './components/section';
-@import './components/card';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
 @import './components/button';
+
+@import './components/section-about';
+
+@import './components/section-services';
+@import './components/link-card';
+
+@import './components/section-galery';
+@import './components/photo-grid';
+
+@import './components/section-subscribe';
+
+@import './components/section-blog';
+@import './components/blog-card';
+
+@import './components/section-contact';
+@import './components/input';
+
+
+
+
+
+
+
 
 
 
