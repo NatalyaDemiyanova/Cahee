@@ -1,11 +1,11 @@
 .section-blog {
 	background-color: $blog-bg-color;
+	padding: 50px 24px;
+	@include media {
+		padding: 80px 0 120px;
+	}
 	&__container {
 		@include flex(center, center, column);
-		padding: 50px 24px;
-		@include media {
-			padding: 80px 0 120px;
-		}
 	}
 	&__title {
 		@include text($H900, 700, $white);

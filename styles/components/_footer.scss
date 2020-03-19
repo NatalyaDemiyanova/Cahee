@@ -1,26 +1,32 @@
 .footer {
 	background-color: $footer-bg-color;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 	&__container {
 		@include flex(space-between, center, column);
-
 		@include media {
 			@include flex(space-between, center);
-
 		}
 	}
 	&__text-left {
 		@include text($H100, 300, $grey-light);
+		margin-bottom: 14px;
+		@include media {
+			margin-bottom: 0;
+		}
 	}
 	&__logo {
-		font-family: $logo-font;
 		@include text($H500, 400, $grey-light);
+		margin-bottom: 18px;
+		@include media {
+			margin-bottom: 0;
+		}
 	}
 	&__text-right {
 		@include text($H50, 300, $grey-light);
+		&--marked {
+			@include text($H50, 700, $text-marked-color);
+		}
 	}
-	&__text-marked {
-		@include text($H50, 700, $text-marked-color);
-	}
+	
 }

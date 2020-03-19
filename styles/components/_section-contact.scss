@@ -22,18 +22,17 @@
 		text-align: center;
 	}
 	&__wrapper {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		width: 100%;
 		@include media {
 			@include flex;
 		}
 	}
 	&__form--wrapper {
-		order: 2;
+		@include flex(flex-star, stretch, column);
 		width: 100%;
 		padding-right: 0px;	
 		@include media {
-			order: 1;
 			width: 50%;
 			padding-right: 75px;
 		}
@@ -58,7 +57,8 @@
 		}
 	}	
 	&__list {
-		order: 1;
+		order: -1;
+		@include flex(flex-star, stretch, column);
 		text-align: center;
 		width: 100%;
 		padding: 0;
@@ -70,7 +70,7 @@
 			margin-bottom: 18px;
 		}
 		@include media {
-			order: 2;
+			order: 0;
 			width: 50%;
 			padding-left: 75px;
 			text-align: left;
