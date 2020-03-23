@@ -10,28 +10,31 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <h1 class="logo navigation__logo">Cahee</h1>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">HOME</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">ABOUT</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">SERVICES</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">GALLERY</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">BLOG</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">CONTACT</a>
-          </li>
-        </ul>
+        <div class="container navigation__container">
+          <h1 class="logo navigation__logo">Cahee</h1>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">HOME</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">ABOUT</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#services">SERVICES</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#gallery">GALLERY</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#blog">BLOG</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+
       <div class="container header__container">
         <section class="header__content">
           <h2 class="header__title">Fresh Life</h2>
@@ -50,7 +53,7 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section id="about" class="section-about">
         <div class=" container section-about__container">
           <div class="section-about__image-box">
             <img
@@ -76,7 +79,7 @@
         </div>
       </section>
 
-      <section class="section-services">
+      <section id="services" class="section-services">
         <div class=" container section-services__container">
           <div class="section-services__content-box">
             <ul class="section-services__list ">
@@ -153,7 +156,7 @@
         </div>
       </section>
 
-      <section class="section-galery">
+      <section id="gallery" class="section-galery">
         <div class="container section-galery__container">
           <h2 class="section-galery__title">Gallery</h2>
           <p class="section-galery__description">
@@ -227,7 +230,7 @@
         </div>
       </section>
 
-      <section class="section-blog">
+      <section id="blog" class="section-blog">
         <div class="container section-blog__container">
           <h2 class="section-blog__title">Blog</h2>
           <p class="section-blog__description">
@@ -295,7 +298,7 @@
         </div>
       </section>
 
-      <section class="section-contact">
+      <section id="contact" class="section-contact">
         <div class="container section-contact__container">
           <h2 class="section-contact__title">Contact</h2>
           <p class="section-contact__description">

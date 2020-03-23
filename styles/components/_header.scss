@@ -1,36 +1,47 @@
 .header {
   background-image: url("../images/header_bg.png");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  @include media($screen-tablet) {
+  }
 
   &__container {
-    @extend %container;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 1 auto;
     min-height: 100vh;
+    @include flex(center, center);
+    padding: 0px 24px;
+    @include media($screen-tablet) {
+      @include flex(flex-start, center);
+      padding: 0;
+    }
   }
-
   &__content {
-    padding-top: 358px;
+    text-align: center;
+    @include media($screen-tablet) {
+      text-align: left;
+    }
   }
   &__title {
-    font-size: $H800;
-    font-weight: 900;
-    color: $text-main-color;
+    @include text($H750, 900);
     margin-bottom: 20px;
+    @include media($screen-iphone-plus) {
+      @include text($H800, 900);
+    }
   }
   &__text {
-    width: 368px;
-    font-size: $H200;
+    width: 100%;
+    @include text($H200, 300);
     line-height: 27px;
-    font-weight: 300;
-    color: $text-main-color;
     padding-bottom: 51px;
+    @include media($screen-iphone-plus) {
+      width: 368px;
+    }
   }
   &__scroll {
-    @include flex(center, center);
-    margin-bottom: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

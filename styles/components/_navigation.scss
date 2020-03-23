@@ -1,12 +1,16 @@
 .navigation {
+  background-color: $navigation-bg-color;
   height: 90px;
   position: fixed;
-  @include flex(space-between, center);
   top: 0; // откуда взялось
   left: 0;
   right: 0;
-  @extend %container;
-  padding-top: 50px;
+  padding-top: 40px;
+  z-index: 5;
+
+  &__container {
+    @include flex(space-between, center);
+  }
 
   &__list {
     @include flex;
