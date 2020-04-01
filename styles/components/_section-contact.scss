@@ -1,8 +1,9 @@
 .section-contact {
-  padding: 50px 24px 60px;
+  padding: 50px 0px 60px;
   background-image: url("../images/contact_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   @include media {
     padding: 80px 0 120px;
   }
@@ -10,48 +11,62 @@
   &__container {
     @include flex(center, center, column);
   }
+
   &__title {
     @include text($H800, 700);
     margin-bottom: 25px;
+
     @include media($screen-small-tablet) {
       @include text($H900, 700);
     }
   }
+
   &__description {
     @include text($H200, 300);
     line-height: 25px;
-    width: 350px;
     margin-bottom: 46px;
     text-align: center;
+
+    @include media($screen-iphone-plus) {
+      width: 350px;
+    }
   }
+
   &__wrapper {
-    flex-direction: column-reverse;
+    @include flex(flex-star, center, column-reverse);
     width: 100%;
+
     @include media {
       @include flex;
     }
   }
-  &__form--wrapper {
-    @include flex(flex-star, stretch, column);
+
+  &__form-wrapper {
+    @include flex(flex-start, stretch, column);
     width: 100%;
+    max-width: 600px;
     padding-right: 0px;
+
     @include media {
       width: 50%;
       padding-right: 75px;
     }
   }
+
   &__form {
-    @include flex(flex-star, stretch, column);
+    @include flex(flex-start, stretch, column);
     margin-bottom: 24px;
     &:valid + * {
       display: flex;
     }
   }
+
   &__input {
     &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
+
   &__button {
     opacity: 0.8;
     display: none;
@@ -62,23 +77,26 @@
     }
   }
   &__list {
-    order: -1;
     @include flex(flex-star, stretch, column);
     text-align: center;
     width: 100%;
     padding: 0;
-    &--title {
-      @include text($H200, 700);
-    }
-    &--text {
-      @include text($H300, 300);
-      margin-bottom: 18px;
-    }
+    margin-bottom: 20px;
+
     @include media {
-      order: 0;
       width: 50%;
       padding-left: 75px;
       text-align: left;
+      margin-bottom: 0;
     }
+  }
+
+  &__list-title {
+    @include text($H200, 700);
+  }
+
+  &__list-text {
+    @include text($H300, 300);
+    margin-bottom: 18px;
   }
 }

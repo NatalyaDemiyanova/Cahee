@@ -4,22 +4,27 @@
   background-color: $white;
   text-align: center;
   @include flex;
+
   @include media {
     width: 400px;
   }
+
   &__text-wrapper {
     flex: 1 1;
     @include flex(center, center);
     border-right: 1px solid $dark;
   }
+
   &__text {
     @include text($H300, 700, $dark);
+    text-transform: capitalize;
   }
 
   &__icon-wrapper {
     width: 100px;
     @include flex(center, center);
   }
+
   &__icon {
     width: 60px;
     height: 60px;

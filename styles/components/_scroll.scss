@@ -1,1 +1,31 @@
+.scroll {
+  width: 24px;
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid $dark;
+  cursor: pointer;
 
+  &:hover {
+    &::after {
+      top: 12px;
+    }
+  }
+
+  &:active {
+    &::after {
+      top: 20px;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background-color: $dark;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4px;
+    transition: all 0.2s ease;
+  }
+}

@@ -5,22 +5,24 @@
 
   &__container {
     @include flex(center, center, column);
-    padding: 0px 24px;
+
     @include media {
       @include flex(space-between, center);
-      margin: 0 auto;
-      padding: 0px;
     }
   }
+
   &__image-box {
     width: 100%;
+
     @include media {
       width: 50%;
     }
   }
+
   &__image {
     width: 100%;
     transition: all 0.4s ease;
+
     @include media {
       &:hover {
         transform: rotate(360deg);
@@ -31,23 +33,28 @@
   &__content-box {
     width: 100%;
     margin-bottom: 70px;
+
     @include media {
       width: 50%;
       padding-left: 80px;
       margin-bottom: 0;
     }
   }
+
   &__title {
     text-align: center;
     @include text($H800, 700, $white);
     margin-bottom: 15px;
+
     @include media($screen-small-tablet) {
       @include text($H900, 700, $white);
     }
+
     @include media {
       text-align: left;
     }
   }
+
   &__text {
     text-align: center;
     @include text($H200, 300, $white);
@@ -55,9 +62,12 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+
     @include media {
-      width: 500px;
       text-align: left;
+    }
+    @include media($screen-desktop-large) {
+      width: 500px;
     }
   }
 }

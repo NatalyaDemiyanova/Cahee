@@ -3,25 +3,23 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 40px;
-  @include media($screen-tablet) {
-  }
 
   &__container {
+    position: relative;
     min-height: 100vh;
     @include flex(center, center);
-    padding: 0px 24px;
     @include media($screen-tablet) {
       @include flex(flex-start, center);
-      padding: 0;
     }
   }
+
   &__content {
     text-align: center;
     @include media($screen-tablet) {
       text-align: left;
     }
   }
+
   &__title {
     @include text($H750, 900);
     margin-bottom: 20px;
@@ -29,6 +27,7 @@
       @include text($H800, 900);
     }
   }
+
   &__text {
     width: 100%;
     @include text($H200, 300);
@@ -38,9 +37,10 @@
       width: 368px;
     }
   }
+
   &__scroll {
     position: absolute;
-    bottom: 0;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
   }

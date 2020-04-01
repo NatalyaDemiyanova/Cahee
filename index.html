@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Cahee (Lesson_13)</title>
+    <title>Cahee</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -12,7 +12,17 @@
       <nav class="navigation">
         <div class="container navigation__container">
           <h1 class="logo navigation__logo">Cahee</h1>
-          <ul class="navigation__list">
+
+          <label class="burger navigation__burger">
+            <input class="burger__input" type="checkbox" />
+            <span class="burger__box">
+              <span class="burger__item"></span>
+              <span class="burger__item"></span>
+              <span class="burger__item"></span>
+            </span>
+          </label>
+
+          <ul class="navigation__list burger__menu">
             <li class="navigation__item">
               <a class="navigation__link" href="#">HOME</a>
             </li>
@@ -44,11 +54,7 @@
           </p>
           <a class="button button--header" href="#">GET FREE NOW</a>
         </section>
-        <div class="scroll header__scroll">
-          <a href="">
-            <img src="images/scroll_40.png" alt="scroll" />
-          </a>
-        </div>
+        <div class="scroll header__scroll"></div>
       </div>
     </header>
 
@@ -240,7 +246,7 @@
             velit.
           </p>
           <ul class="section-blog__list">
-            <li class="section-blog__list--item blog-card">
+            <li class="section-blog__list-item blog-card">
               <img
                 class="blog-card__image"
                 src="images/blog/moxito.png"
@@ -257,7 +263,7 @@
                 <p class="blog-card__info">By Auskteez - 2 hours ago</p>
               </div>
             </li>
-            <li class="section-blog__list--item blog-card">
+            <li class="section-blog__list-item blog-card">
               <img
                 class="blog-card__image"
                 src="images/blog/soup.png"
@@ -274,7 +280,7 @@
                 <p class="blog-card__info">By Auskteez - 3 hours ago</p>
               </div>
             </li>
-            <li class="section-blog__list--item blog-card">
+            <li class="section-blog__list-item blog-card">
               <img
                 class="blog-card__image"
                 src="images/blog/malina.png"
@@ -306,7 +312,7 @@
             contact with me!
           </p>
           <div class="section-contact__wrapper">
-            <div class="section-contact__form--wrapper">
+            <div class="section-contact__form-wrapper">
               <form
                 class="section-contact__form"
                 name="form"
@@ -353,27 +359,27 @@
             </div>
 
             <ul class="section-contact__list">
-              <li class="section-contact__list--item">
-                <p class="section-contact__list--title">
+              <li class="section-contact__list-item">
+                <p class="section-contact__list-title">
                   ADDRESS
                 </p>
-                <p class="section-contact__list--text">
+                <p class="section-contact__list-text">
                   123 City name, Street, City, Country
                 </p>
               </li>
-              <li class="section-contact__list--item">
-                <p class="section-contact__list--title">
+              <li class="section-contact__list-item">
+                <p class="section-contact__list-title">
                   EMAIL
                 </p>
-                <p class="section-contact__list--text">
+                <p class="section-contact__list-text">
                   cahee@domain.com
                 </p>
               </li>
-              <li class="section-contact__list--item">
-                <p class="section-contact__list--title">
+              <li class="section-contact__list-item">
+                <p class="section-contact__list-title">
                   PHONE
                 </p>
-                <p class="section-contact__list--text">
+                <p class="section-contact__list-text">
                   +012 345 6789
                 </p>
               </li>
@@ -384,11 +390,10 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <p class="footer__text-left">© 2015 Company. All right reserved.</p>
+        <p class="footer__copyright">© 2015 Company. All right reserved.</p>
         <p class="footer__logo logo">Cahee</p>
-        <p class="footer__text-right">
-          Made with <span class="footer__text-right--marked">love</span> by
-          Auskteez
+        <p class="footer__author">
+          Made with <span class="footer__author--marked">love</span> by Auskteez
         </p>
       </div>
     </footer>
