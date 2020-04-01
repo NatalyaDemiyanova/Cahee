@@ -1,36 +1,37 @@
 .button {
-	border: none;
-	@include text($H300, 300, $white);
-	@include flex(center, center);
-	padding: 15px 25px;
-	text-transform: uppercase;
-	text-align: center;
-	width: 100%;
-	cursor: pointer;
-	transition: all 0.2s ease;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-	@include media($screen-tablet) {
-		width: fit-content;	
-	}
-	@include media {
-		&:hover {
-	      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	    }
-	}
+  border: none;
+  @include text($H300, 300, $white);
+  @include flex(center, center);
+  padding: 15px 25px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
-	&--header {
-		background-color: $header-btn-color;
-	}
-	&--gallery {
-		background-color: $gallery-btn-color;
-	}
-	&--subscribe {
-		background-color: $subscribe-btn-color;
-	}
-	&--blog {
-		background-color: $blog-btn-color;
-	}
-	&--input {
-		background-color: $input-bg;
-	}
+  @include media($screen-tablet) {
+    width: fit-content;
+  }
+  @include media {
+    &:hover {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--header {
+    background-color: $header-btn-color;
+  }
+  &--gallery {
+    background-color: $gallery-btn-color;
+  }
+  &--subscribe {
+    background-color: $subscribe-btn-color;
+  }
+  &--blog {
+    background-color: $blog-btn-color;
+  }
+  &--input {
+    background-color: $input-bg;
+  }
 }
